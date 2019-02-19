@@ -7,6 +7,8 @@
  * Author: M.Sevimli
  * Author URI: http://plife.se
  * License: GPL2
+ * https://github.com/msevimli/
+ * https://www.linkedin.com/in/m-sevimli/
  */
 
 /* wp-json/wp/v2/users */
