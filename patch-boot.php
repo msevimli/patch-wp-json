@@ -13,6 +13,6 @@
 
 /* wp-json/wp/v2/users */
 // If you don't want to install this plugin, you can just include  following class directly into the your theme
-// or your custom management plugin
+// or your custom plugin
 
 require_once("inc/patch-wp-json.php");
