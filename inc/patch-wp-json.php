@@ -13,7 +13,8 @@ if(class_exists("patchWPJson")) {
              *  Thanks to lowtechsun from M for following filters and actions
             */
             remove_action('wp_head', 'rest_output_link_wp_head', 10);
-            // You can require authentication for all REST API requests by adding an is_user_logged_in check to the rest_authentication_errors filter.
+            // You can require authentication for all REST API requests by adding an is_user_logged_in
+            // check to the rest_authentication_errors filter.
             add_filter('rest_authentication_errors', function ($result) {
                 if (!empty($result)) {
                     return $result;
