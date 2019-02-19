@@ -6,7 +6,7 @@
  * Version: 1.0
  * Author: M.Sevimli
  * Author URI: http://plife.se
- * License: GPL2
+ * License: MIT
  * https://github.com/msevimli/
  * https://www.linkedin.com/in/m-sevimli/
  */
