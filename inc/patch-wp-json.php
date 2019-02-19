@@ -24,7 +24,6 @@ if(class_exists("patchWPJson")) {
                 }
                 return $result;
             });
-
             if (!is_admin()) {
                 // default URL format
                 if (preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING'])) die();
