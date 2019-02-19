@@ -13,7 +13,8 @@ You can download and install it to your Wordpress site as regular plugin install
 ## Install as a Plugin
 
 ```
-Download zip file and go to Dashboard > Plugins > Add New and upload zip file which is you downloaded and activate it.
+Download zip file and go to Dashboard > Plugins > Add New and upload zip file 
+you have downloaded and activate it.
 ```
 
 ## Custom Installation 
