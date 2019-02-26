@@ -1,5 +1,5 @@
 # Wordpress wp-json REST API patch
-If you have a Wordpress site probably you are under potential hacking risk because of a backdoor by REST API way : 
+If you have a Wordpress site probably you are under potential hacking risk because of a backdoor by REST API way : <br/>
 **wp-json/wp/v2/users**
 With this, an attacker can readily access your users data such critical information as  username, author information or user id which are useable on attacking to system.
 
