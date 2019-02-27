@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Patch wp-json/users Backdoor
- * Plugin URI: http://plife.se
+ * Plugin URI: https://plife.se
  * Description: This plugin is patching for availability of users data by REST API  wp-json
  * Version: 1.0
  * Author: M.Sevimli
