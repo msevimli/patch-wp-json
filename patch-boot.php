@@ -5,7 +5,7 @@
  * Description: This plugin is patching for availability of users data by REST API  wp-json
  * Version: 1.0
  * Author: M.Sevimli
- * Author URI: http://plife.se
+ * Author URI: https://plife.se
  * License: MIT
  * https://github.com/msevimli/
  * https://www.linkedin.com/in/m-sevimli/
