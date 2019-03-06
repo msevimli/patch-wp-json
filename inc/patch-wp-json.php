@@ -10,7 +10,7 @@ if(class_exists("patchWPJson")) {
         public function __construct()
         {
             /*
-             *  Thanks to lowtechsun and stackoverflow from M for following filters and actions
+                *  Thanks to lowtechsun and stackoverflow from M for following filters and actions
             */
             remove_action('wp_head', 'rest_output_link_wp_head', 10);
             // You can require authentication for all REST API requests by adding an is_user_logged_in
