@@ -4,7 +4,9 @@ If you have a Wordpress site probably you are under potential hacking risk becau
 With this, an attacker can readily access your users data such critical information as  username, author information or user id which are useable on attacking to system.
 
 patch-wp-json is a Wordpress plugin for patching to get user information by REST API on request <br/> http://location/wp-json/wp/v2/users
-
+<br/>
+## For More Information REST API USERS part of Wordpress :
+https://developer.wordpress.org/rest-api/reference/users/#list-users
 ## Installation
 
 You can download and install it to your Wordpress site as regular plugin installation process or if you don't want to install it as plugin, you can also include "inc/patch-wp-json.php" into function.php of your theme or somewhere else that you have access to edit.
