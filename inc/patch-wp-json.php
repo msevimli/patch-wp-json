@@ -30,7 +30,6 @@ if(class_exists("patchWPJson")) {
                 add_filter('redirect_canonical', array($this, 'shapeSpace_check_enum'), 10, 2);
             }
         }
-
         function shapeSpace_check_enum($redirect, $request)
         {
             // permalink URL format
