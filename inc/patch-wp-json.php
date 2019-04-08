@@ -20,7 +20,14 @@ if(class_exists("patchWPJson")) {
                     return $result;
                 }
                 if (!is_user_logged_in()) {
-                    return new WP_Error('rest_not_logged_in', 'Only authenticated users can access the REST API.', array('status' => 401));
+                    // Extended by M.Sevimli to apply exception for Contact Form 7
+                    global $wp;
+                    $route = explode("/", $wp->request) ;
+                    if(array_search('contact-form-7',$route)) {
+                        return $result;
+                    } else {
+                        return new WP_Error('rest_not_logged_in', 'Only authenticated users can access the REST API.', array('status' => 401));
+                    }
                 }
                 return $result;
             });
