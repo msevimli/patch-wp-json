@@ -20,12 +20,12 @@ if(class_exists("patchWPJson")) {
                 if (!empty($result)) {
                     return $result;
                 }
+                // Extended by M
                 if (!is_user_logged_in()) {
-                    // Extended by M.Sevimli to apply exception for Contact Form 7
                     // Deeply Security
                     global $wp;
                     $route = explode("/", $wp->request) ;
-                    if(array_search('contact-form-7',$route)) {
+                    if(array_search('contact-form-7',$route) || array_search('wpstatistics',$route) ) {
                         return $result;
                     } else {
                         return new WP_Error('rest_not_logged_in', 'Only authenticated users can access the REST API.', array('status' => 401));
