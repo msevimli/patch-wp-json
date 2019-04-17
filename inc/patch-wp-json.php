@@ -11,6 +11,7 @@ if(class_exists("patchWPJson")) {
         {
             /*
                 *  Thanks to lowtechsun and stackoverflow from M for following filters and actions
+                *  I am extending them to computable security 
             */
             remove_action('wp_head', 'rest_output_link_wp_head', 10);
             // You can require authentication for all REST API requests by adding an is_user_logged_in
@@ -21,6 +22,7 @@ if(class_exists("patchWPJson")) {
                 }
                 if (!is_user_logged_in()) {
                     // Extended by M.Sevimli to apply exception for Contact Form 7
+                    // Deeply Security
                     global $wp;
                     $route = explode("/", $wp->request) ;
                     if(array_search('contact-form-7',$route)) {
@@ -28,6 +30,14 @@ if(class_exists("patchWPJson")) {
                     } else {
                         return new WP_Error('rest_not_logged_in', 'Only authenticated users can access the REST API.', array('status' => 401));
                     }
+                    // Little Soft Security
+                    /*
+                    if( array_search('users',$route)) {
+                        return new WP_Error('rest_not_logged_in', 'Only authenticated users can access the REST API.', array('status' => 401));
+                    } else {
+                        return $result;
+                    }
+                    */
                 }
                 return $result;
             });
